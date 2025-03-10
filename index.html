@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ann's Toast Message</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./styles.css"> 
+
+    </head>
+
+    <body>
+        
+        <div id="toast"></div>
+
+        <div>
+        <div onclick="showSuccessToast();" class="btn btn--success">Success Toast</div>
+        <div onclick="showErrorToast();" class="btn btn--danger">Error Toast</div>
+        </div>
+
+        <script>
+            function showSuccessToast() {
+                toast({
+                title: "Success!",
+                message: "You have successully been ...",
+                type: "success",
+                duration: 5000
+                });
+            }
+
+            function showErrorToast() {
+                toast({
+                title: "Error!",
+                message: "Error! Please contact us!",
+                type: "error",
+                duration: 5000
+                });
+            }
+        </script>
+        
+    </body>
+</html>
