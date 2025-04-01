@@ -14,11 +14,11 @@
         <div id="toast"></div>
 
         <div>
-        <div onclick="showSuccessToast();" class="btn btn--success">Success Toast</div>
-        <div onclick="showErrorToast();" class="btn btn--danger">Error Toast</div>
+            <div onclick="showSuccessToast();" class="btn btn--success">Success Toast</div>
+            <div onclick="showErrorToast();" class="btn btn--danger">Error Toast</div>
         </div>
 
-        <script>
+        <script src="./main.js">
             function showSuccessToast() {
                 toast({
                 title: "Success!",
@@ -35,7 +35,7 @@
                 type: "error",
                 duration: 5000
                 });
-            }
+            }  
         </script>
         
     </body>
